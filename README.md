@@ -1,10 +1,15 @@
-# BCC Safety Web Application v12.3
+# BCC Safety Web Application v12.4 — Login Fixed Ready Upload
 
-- ลบแถบสีเทาด้านล่าง Footer-sub ออกตามภาพ
-- ขยายข้อความ `เดือนที่แสดง Accident Record:` ให้ใหญ่ขึ้น
-- เหลือปุ่ม Export รูปแนวตั้ง และ Export รูปแนวนอน
-- Header ใช้ KV/BCC/Safety ตามไฟล์แนบ
+ไฟล์นี้แก้ Login ไม่เข้าแล้ว โดยใช้ document.getElementById(), trim password และรองรับ Enter key
 
 ## Login
 User: `BCC`
 Password: `Siriphan.m`
+
+## ต้องอัปโหลดไฟล์ด้านในไปไว้ที่ root ของ repo
+- `.github/`
+- `src/worker.js`
+- `package.json`
+- `wrangler.toml`
+- `README.md`
+- `.gitignore`

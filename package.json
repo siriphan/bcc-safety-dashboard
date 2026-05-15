@@ -1,6 +1,6 @@
 {
-  "name": "bcc-safety-webapp-v12-remove-footerbar-big-month-label",
-  "version": "12.3.0",
+  "name": "bcc-safety-webapp-v12-login-fixed-ready-upload",
+  "version": "12.4.0",
   "private": true,
   "type": "module",
   "scripts": {
