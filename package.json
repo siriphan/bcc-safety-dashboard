@@ -1,6 +1,6 @@
 {
-  "name": "bcc-safety-webapp-v11-manual-number-edit-remove-top-menubar",
-  "version": "11.1.0",
+  "name": "bcc-safety-webapp-v12-remove-footerbar-big-month-label",
+  "version": "12.3.0",
   "private": true,
   "type": "module",
   "scripts": {
