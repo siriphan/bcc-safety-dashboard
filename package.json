@@ -1,6 +1,6 @@
 {
-  "name": "bcc-safety-webapp-v3-export-image",
-  "version": "3.0.0",
+  "name": "bcc-safety-webapp-v4-footer",
+  "version": "4.0.0",
   "private": true,
   "type": "module",
   "scripts": {
