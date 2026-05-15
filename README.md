@@ -1,12 +1,13 @@
-# BCC Safety Web Application v2 — แยกตามฝ่าย
+# BCC Safety Web Application v3 — Export รูป PNG + แยกตามฝ่าย
 
-เวอร์ชันนี้ปรับเป็น Web Application พร้อมฟีเจอร์:
-
+ฟีเจอร์หลัก:
 - Font หลัก: `TH Sarabun New` และ fallback เป็น Google Font `Sarabun`
 - เพิ่ม / ลบ / เลือกดูข้อมูลแยกตามฝ่าย
 - แต่ละฝ่ายมี Safety Record และ Accident Record แยกกัน
 - Real-time Sync ผ่าน Cloudflare Workers + Durable Objects + WebSocket
-- โครงสร้างไฟล์ถูกต้อง มี `src/worker.js` เพื่อแก้ปัญหา entry-point not found
+- Export ข้อมูล JSON
+- Export หน้าจอเป็นรูปภาพ PNG
+- Footer ด้านล่าง: `Web Application ผู้จัดทำ: Siriphan`
 
 ## โครงสร้างไฟล์ที่ต้องอยู่ที่ Root ของ GitHub repo
 
@@ -29,16 +30,9 @@ CLOUDFLARE_ACCOUNT_ID
 
 Push เข้า branch `main` หรือกด Run workflow ใน GitHub Actions
 
-## ทดสอบบนเครื่อง
+## ทดสอบ Local
 
 ```bash
 npm install
 npm run dev
-```
-
-## Manual deploy
-
-```bash
-npm install
-npx wrangler deploy
 ```
