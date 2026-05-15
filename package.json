@@ -1,0 +1,13 @@
+{
+  "name": "bcc-safety-webapp-v12-remove-footerbar-big-month-label",
+  "version": "12.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "latest"
+  }
+}
