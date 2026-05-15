@@ -1,37 +1,44 @@
-# BCC Safety Interactive Dashboard — GitHub + Cloudflare Workers
+# BCC Safety Web Application v2 — แยกตามฝ่าย
 
-Dashboard สำหรับ Safety Record / Accident Record พร้อมแก้ไขข้อมูลแบบ Real-time ข้ามหลายเครื่อง ผ่าน Cloudflare Workers + Durable Objects + WebSocket
+เวอร์ชันนี้ปรับเป็น Web Application พร้อมฟีเจอร์:
 
-## Deploy ผ่าน GitHub Actions
+- Font หลัก: `TH Sarabun New` และ fallback เป็น Google Font `Sarabun`
+- เพิ่ม / ลบ / เลือกดูข้อมูลแยกตามฝ่าย
+- แต่ละฝ่ายมี Safety Record และ Accident Record แยกกัน
+- Real-time Sync ผ่าน Cloudflare Workers + Durable Objects + WebSocket
+- โครงสร้างไฟล์ถูกต้อง มี `src/worker.js` เพื่อแก้ปัญหา entry-point not found
 
-1. สร้าง GitHub repository ใหม่ เช่น `bcc-safety-dashboard`
-2. Upload ไฟล์ทั้งหมดใน ZIP นี้ขึ้น repository
-3. ไปที่ Cloudflare Dashboard > My Profile > API Tokens > Create Token
-4. เลือก Template: **Edit Cloudflare Workers** หรือสร้าง Custom Token ที่มีสิทธิ์ Workers Scripts Edit สำหรับ Account
-5. ไปที่ GitHub Repository > Settings > Secrets and variables > Actions > New repository secret
-6. ตั้งชื่อ secret เป็น `CLOUDFLARE_API_TOKEN` แล้ววางค่า Token
-7. ไปที่แท็บ Actions แล้ว Run workflow หรือ push เข้า branch `main`
-
-## ไฟล์สำคัญ
+## โครงสร้างไฟล์ที่ต้องอยู่ที่ Root ของ GitHub repo
 
 ```text
 .github/workflows/deploy-cloudflare.yml
 package.json
 wrangler.toml
 src/worker.js
+README.md
 ```
 
-## ทดสอบ Local
+## GitHub Secrets ที่ต้องมี
+
+```text
+CLOUDFLARE_API_TOKEN
+CLOUDFLARE_ACCOUNT_ID
+```
+
+## Deploy
+
+Push เข้า branch `main` หรือกด Run workflow ใน GitHub Actions
+
+## ทดสอบบนเครื่อง
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Deploy Manual
+## Manual deploy
 
 ```bash
 npm install
-npx wrangler login
-npm run deploy
+npx wrangler deploy
 ```
