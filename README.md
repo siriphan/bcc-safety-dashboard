@@ -1,7 +1,7 @@
-# BCC Safety Web Application v12.5 — OperateDays Auto From Monthly Accident Record
+# BCC Safety Web Application v12.6 — Operated Days Since Last Lost Time Accident
 
 เปลี่ยนตามคำขอ:
-- ช่อง "ทำงานมาแล้วโดยไม่เกิดอุบัติเหตุถึงขั้นหยุดงาน (วัน)" คำนวณอัตโนมัติจากปฏิทิน Accident Record ของเดือนที่เลือก (นับวันสีเขียว)
+- ช่อง "ทำงานมาแล้วโดยไม่เกิดอุบัติเหตุถึงขั้นหยุดงาน (วัน)" นับจำนวนวันตั้งแต่ "เกิดอุบัติเหตุถึงขั้นหยุดงานครั้งสุดท้าย" (วันสีแดง) ถึงวันที่คำนวณ
 - ช่องดังกล่าวเป็น readonly ไม่สามารถแก้ไขตัวเลขได้
 
 ## Login
