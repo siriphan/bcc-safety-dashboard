@@ -1,6 +1,6 @@
 {
-  "name": "bcc-safety-webapp-v11-manual-number-edit",
-  "version": "11.0.0",
+  "name": "bcc-safety-webapp-v11-manual-number-edit-remove-top-menubar",
+  "version": "11.1.0",
   "private": true,
   "type": "module",
   "scripts": {
